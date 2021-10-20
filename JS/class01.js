@@ -3,4 +3,4 @@
 let edadIngresada = parseInt(prompt("Bienvenido a continuación ingrese su edad"));
 let edadJubilatoria = 65 - edadIngresada;
 //console.log("Usted se va a jubilar en " + edadJubilatoria + " años.");
-console.log(`Usted se va a jubilar en ${edadJubilatoria} años.`);
+alert(`Usted se va a jubilar en ${edadJubilatoria} años.`);
