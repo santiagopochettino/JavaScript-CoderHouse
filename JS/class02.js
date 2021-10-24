@@ -74,6 +74,7 @@ const logInEmail = prompt("Ingrese su mail");
 const logInPassword = prompt("Ingrese su contraseña");
 const validAcount = (logInEmail === email) && (logInPassword === password);
 const espaceAcount = (logInEmail == "") || (logInEmail == "");
+
 if (validAcount) {
     alert(`Bienvenido ${email}!! ¿Como estas?!`);
 } else if (espaceAcount) {
@@ -81,3 +82,14 @@ if (validAcount) {
 } else {
     alert('Acceso denegado. Datos incorrectos');
 }
+
+
+
+
+
+
+
+
+
+
+
