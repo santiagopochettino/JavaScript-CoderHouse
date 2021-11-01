@@ -61,7 +61,7 @@ while (entrada != "ESC") {
 */
 /* DESAFIO 03 */
 
-for (let i = 0; i <= 10; i++) {
+for (let i = 0; i < 2; i++) {
     let consultarNumero = parseInt(prompt("Elegir un numero del 0 al 10"));
 
     if (consultarNumero <= 5) {

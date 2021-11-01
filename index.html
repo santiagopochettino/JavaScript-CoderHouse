@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 03: FOR WHILE DO WHILE</title>
+    <title>Class 04: Functions</title>
+    <link rel="stylesheet" href="/css/index.css">
+
+
 </head>
 
 <body>
@@ -16,7 +19,34 @@
     <!-- Fin Header -->
     <!-- Inicio Main -->
     <main>
-
+        <section id="calculadora">
+            <div class="container">
+                <div class="calculadora">
+                    <div class="display">
+                        <div id="valorAnterior"> </div>
+                        <div id="valorActual"> </div>
+                    </div>
+                    <button class="col-2" onclick="display.borrarTodo()">C</button>
+                    <button onclick="display.borrar()">&larr;</button>
+                    <button class="operador" value="dividir">%</button>
+                    <button class="numero">7</button>
+                    <button class="numero">8</button>
+                    <button class="numero">9</button>
+                    <button class="operador" value="multiplicar">X</button>
+                    <button class="numero">4</button>
+                    <button class="numero">5</button>
+                    <button class="numero">6</button>
+                    <button class="operador" value="restar">-</button>
+                    <button class="numero">1</button>
+                    <button class="numero">2</button>
+                    <button class="numero">3</button>
+                    <button class="operador" value="sumar">+</button>
+                    <button class="col-2 numero">0</button>
+                    <button class="numero">.</button>
+                    <button class="operador" value="igual">=</button>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
@@ -25,7 +55,9 @@
     </footer>
     <!-- Fin Footer -->
 
-    <script src="./JS/class03.js"></script>
+    <script src="./JS/class04.js" defer></script>
+    <script src="./JS/Calculadora.js"></script>
+    <script src="./JS/Display.js"></script>
 </body>
 
 </html>
