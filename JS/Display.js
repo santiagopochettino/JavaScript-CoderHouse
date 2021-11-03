@@ -15,7 +15,7 @@ class Display {
     }
 
     sumarIva() {
-        this.valorActual = this.valorActual * 0.21;
+        this.valorActual = this.valorActual * 1.21;
         this.imprimirValores();
     }
 
