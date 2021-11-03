@@ -14,6 +14,11 @@ class Display {
         }
     }
 
+    sumarIva() {
+        this.valorActual = this.valorActual * 0.21;
+        this.imprimirValores();
+    }
+
     borrar() {
         this.valorActual = this.valorActual.toString().slice(0, -1);
         this.imprimirValores();
