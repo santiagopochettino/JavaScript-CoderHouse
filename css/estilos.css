@@ -65,7 +65,10 @@ button:focus{
 #valorAnterior{
     font-size: 2em;
 }
-
+.volver{
+    text-decoration: none;
+   
+}
 
 
 
