@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    background-color: #80baec;
+}
+
+nav a, .titulo{
+    font-weight: bold;
+    list-style: none;
+}
+nav a:hover{
+    text-decoration: none;
+}
