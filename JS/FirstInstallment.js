@@ -13,10 +13,10 @@ class UI {
         element.innerHTML = `
         <div class="card ">
             <div class="card-body mb-4" width=100%>
-                <strong>Nombre del Producto</strong>: ${product.name}
-                <strong>Precio del Producto</strong>: ${product.price}
-                <strong>Talle del Producto</strong>: ${product.size}
-                <a href="#" class="btn btn-danger" name ="delete">Borrar</a>
+                <strong>Nombre</strong>: ${product.name}</br>
+                <strong>Precio</strong>: $ ${product.price}</br>
+                <strong>Talle</strong>: ${product.size}</br>
+                <a href="#" class="btn btn-outline-danger btn-block" name ="delete">Borrar</a>
             </div>
         </div>
         `;
