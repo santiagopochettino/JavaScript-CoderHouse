@@ -6,7 +6,7 @@
 // en el primero ponemos la clase o el id y en segundo el metodo
 
 
-//$(".btn").action()
+//$(".btn").action()    $(".btn") class   .action() metodo
 
 //$("#main") es lo mismo que : document.getElementById
 //$(".btn") es lo mismo que : document.getElementsByClassName
