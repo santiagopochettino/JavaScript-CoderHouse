@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 14: AJAX & API</title>
+    <title>Class 15: 3ra entrega</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/alcohol.css">
     <script src="/JS/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -19,9 +20,8 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <a href="/" class="navbar-brand ">
-                PokeDex
+                <h2>Licoreria </h1>
             </a>
-            <a href="calculadora.html">Calculadora</a>
         </nav>
     </header>
     <!-- Fin Header -->
@@ -62,15 +62,164 @@
         <!--Fin App -->
 
         <!--Inicio PokeDex-->
-        <div class="input-group mb-3">
+        <!--
+            <div class="input-group mb-3">
             <button type="button" id="renderPokemon" class="btn btn-danger">Buscador:</button>
             <input id="pokemonId" type="text" placeholder="Busque aquí su pokemon!" class="form-control">
 
         </div>
         <div id="pokeDex"></div>
+       -->
 
 
         <!--Fin PokeDex-->
+        <!-- Inicio Venta de alcohol-->
+        <section class="alcohol" id="product-form">
+            <!--Inicio Fernet branca-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img1.png" alt="Fernet branca 750cc">
+                        <h2 class="name">Fernet Branca </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4 class="price">1000</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block ">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Fernet branca-->
+            <!--Inicio Gin Bombay Sapphire 750 cc-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img2.png" alt="Gin Bombay Sapphire 750 cc">
+                        <h2>Gin Bombay </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>1500</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Gin Bombay Sapphire 750 cc-->
+            <!--Inicio Ron Malibu-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img3.png" alt="Ron Malibu">
+                        <h2>Ron Malibu </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>2000</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Ron Malibu-->
+            <!--Inicio Whisky Jonnie Walker Black label-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img4.png" alt="Whisky Jonnie Walker Black label">
+                        <h2>Jonnie Walker Black label </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>1000</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Whisky Jonnie Walker Black label-->
+            <!--Inicio Bailey's Original Cream-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img5.png" alt="Bailey's Original Cream">
+                        <h2>Bailey's Original Cream </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>2300</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Bailey's Original Cream-->
+            <!--Inicio Vodka Smirnof 700 cc-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img6.png" alt="Vodka Smirnof 700 cc">
+                        <h2>Vodka Smirnof </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>1000</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Vodka Smirnof 700 cc-->
+            <!--Inicio Aperol 750cc-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img7.png" alt="Aperol 750cc">
+                        <h2>Aperol </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>800</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Aperol 750cc-->
+            <!--Inicio Vodka Absolut Original 1400cc-->
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="/assets/img8.png" alt="Vodka Absolut Original 1400cc">
+                        <h2>Vodka Absolut </h2>
+                    </div>
+                    <div class="content">
+                        <div class="size">
+                            <h3>Precio: $</h3>
+                            <h4>1000</h4>
+                        </div>
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </div>
+            <!-- FIn Vodka Absolut Original 1400cc-->
+            <div class="col-md-8">
+                <div id="product-list" class="col-md-8">
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Fin Venta de Alcohol-->
 
     </main>
     <!-- Fin Main -->
@@ -82,7 +231,7 @@
 
 
 
-    <script src="./JS/class14.js"></script>
+    <script src="./JS/class15.js"></script>
 
 </body>
 

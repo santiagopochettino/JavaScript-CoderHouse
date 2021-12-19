@@ -1,16 +1,24 @@
 body{
     margin: 0;
-    background-color: #eff2f5;
+    
     
 }
-
+ 
 nav a, .titulo{
     font-weight: bold;
     list-style: none;
+   
 }
 nav a:hover{
     text-decoration: none;
 }
+.navbar{
+    z-index: 100;
+    background: #232323;
+    
+}
+
+
 .pokecard{
     display: flex;
     justify-content: center;
