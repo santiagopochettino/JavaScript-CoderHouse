@@ -99,24 +99,21 @@
     visibility: visible;
     transform: translateY(-20px);
 }
-.container .card .content .size,
-.container .card .content .color{
+.container .card .content .price{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 20px;
 
 }
-.container .card .content .size h3,
-.container .card .content .color h3{
+.container .card .content .price h3{
     color: #fff;
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
     margin-right: 10px;
 }
-.container .card .content .size h4,
-.container .card .content .color h4{
+.container .card .content .price h4{
     color: #fff;
     font-weight: 300;
     font-size: 14px;
