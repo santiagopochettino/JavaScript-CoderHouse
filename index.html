@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 15: 3ra entrega</title>
+    <title>Sofia's Drinks</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="css/alcohol.css">
+
     <script src="/JS/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -20,7 +19,7 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <a href="/" class="navbar-brand ">
-                <h2>Licoreria </h1>
+                <h2>Tienda de bebidas Sofia's Drinks</h1>
             </a>
         </nav>
     </header>
@@ -74,191 +73,135 @@
 
         <!--Fin PokeDex-->
         <!-- Inicio Venta de alcohol-->
-        <section class="alcohol" id="product-form">
-            <!--Inicio Fernet branca-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img1.png" alt="Fernet branca 750cc">
-                        <h2>Fernet Branca </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>1000</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
 
 
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Fernet branca-->
-            <!--Inicio Gin Bombay Sapphire 750 cc-->
-            <div class="container">
+
+        <!-- Inicio template Carrito-->
+        <template id="template-carrito">
+            <tr>
+                <th scope="row">id</th>
+                <td>Café</td>
+                <td>1</td>
+                <td>
+                    <button class="btn btn-info btn-sm">
+                        +
+                    </button>
+                    <button class="btn btn-danger btn-sm">
+                        -
+                    </button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+        <!-- Fin template Carrito-->
+
+        <!-- Inicio template Cards-->
+        <div class="container">
+            <h1>Catalogo:</h1>
+            <hr>
+            <div class="row" id="cards"></div>
+        </div>
+
+        <template id="template-card">
+            <div class="col-12 mb-2 col-md-3">
                 <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img2.png" alt="Gin Bombay Sapphire 750 cc">
-                        <h2>Gin Bombay </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>1500</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Titulo</h5>
+                        <p class="font-weight-bold">precio</p>
+                        <button class="btn btn-success">Comprar</button>
                     </div>
                 </div>
             </div>
-            <!-- FIn Gin Bombay Sapphire 750 cc-->
-            <!--Inicio Ron Malibu-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img3.png" alt="Ron Malibu">
-                        <h2>Ron Malibu </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>2000</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Ron Malibu-->
-            <!--Inicio Whisky Jonnie Walker Black label-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img4.png" alt="Whisky Jonnie Walker Black label">
-                        <h2>Jonnie Walker Black label </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>1000</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Whisky Jonnie Walker Black label-->
-            <!--Inicio Bailey's Original Cream-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img5.png" alt="Bailey's Original Cream">
-                        <h2>Bailey's Original Cream </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>2300</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Bailey's Original Cream-->
-            <!--Inicio Vodka Smirnof 700 cc-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img6.png" alt="Vodka Smirnof 700 cc">
-                        <h2>Vodka Smirnof </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>1000</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Vodka Smirnof 700 cc-->
-            <!--Inicio Aperol 750cc-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img7.png" alt="Aperol 750cc">
-                        <h2>Aperol </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>800</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Aperol 750cc-->
-            <!--Inicio Vodka Absolut Original 1400cc-->
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="/assets/img8.png" alt="Vodka Absolut Original 1400cc">
-                        <h2>Vodka Absolut </h2>
-                    </div>
-                    <div class="content">
-                        <div class="price">
-                            <h3>Precio: $</h3>
-                            <h4>1000</h4>
-                        </div>
-                        <a href="#formulario" class="btn btn-primary btn-block ">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FIn Vodka Absolut Original 1400cc-->
-            <div class="col-md-8">
-                <div id="product-list" class="col-md-8">
-                </div>
-            </div>
+        </template>
+        <!-- Fin template Cards-->
+        <div class="container">
+            <h4>Carrito de compras</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acción</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer">
+                        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- Inicio template Footer-->
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    Vaciar Todo
+                </button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-01"
+                    id="terminar-compra">
+                    Finalizar Compra
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        <!-- Fin template Footer-->
 
 
-        </section>
-        <!-- Fin Venta de Alcohol-->
-        <!-- Inicio Formulario-->
-        <section id="formulario">
-            <div class="formulario">
-                <h2>Haga su pedido</h2>
-                <form action="" method="POST">
-                    <div class="field">
-                        <label for="bebida">Seleccione su bebida:</label>
-                        <select name="bebida" required class="form-control">
-                            <option value="--">--</option>
-                            <option value="fernet">Fernet Branca 750cc</option>
-                            <option value="gin">Gin Bombay Sapphire 750 cc</option>
-                            <option value="malibu">Ron Malibu 750cc</option>
-                            <option value="whisky">Whisky Jonnie Walker Black label 700cc</option>
-                            <option value="baileys">Bailey's Original Cream 375 cc</option>
-                            <option value="smirnof">Vodka Smirnof 700 cc</option>
-                            <option value="aperol">Aperol 750cc</option>
-                            <option value="absolut">Vodka Absolut Original 1400cc</option>
-                        </select>
+        <!-- Modal 01 -->
+        <div class="modal fade" id="modal-01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Formulario de envio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="field">
-                        <label for="cantidad">Cantidad:</label>
-                        <input name="cantidad" type="number" required>
+                    <div class="modal-body">
+                        <form action="" id="product-form" method="POST">
+                            <label for="name">Nombre y Apellido:</label>
+                            <input id="name" name="name" type="text" placeholder="Escriba su Nombre Completo..."
+                                required class="form-control">
+                            <label for="telefono">Telefono:</label>
+                            <input id="telefono" type="text" name="telefono" placeholder="Escriba su Telefono..."
+                                required class="form-control">
+                            <label for="direccion">Dirección:</label>
+                            <input id="direccion" name="direccion" type="text" placeholder="Escriba su Dirección..."
+                                required class="form-control">
+                        </form>
                     </div>
-                    <div class="field">
-                        <label for="precio">Precio:</label>
-                        <input name="precio" type="text" required>
+                    <div class="modal-footer">
+                        <input type="submit" value="Enviar" id="modal-borrar-todo" class="btn btn-primary btn-block"
+                            data-bs-toggle="modal" data-bs-target="#modal-02">
                     </div>
-                    <div class="field tel">
-                        <label for="subtotal">Subtotal:</label>
-                        <input name="subtotal" type="text" required>
-                    </div>
-
-                    <button class="btn btn-primary form-btn" type="submit">AGREGAR</button>
-                </form>
+                </div>
             </div>
-        </section>
+        </div>
+        <!-- /Modal 01 -->
+        <!-- Modal 02 -->
+        <div class="modal fade" id="modal-02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias por elegirnos!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Compra realizada. Dentro de las proximas 48 Hs llegará su pedido.</p>
 
-        <!-- Fin Formulario-->
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" value="✔" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modal-02">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
 
     </main>
     <!-- Fin Main -->
@@ -267,10 +210,13 @@
 
     </footer>
     <!-- Fin Footer -->
-
-
-
-    <script src="./JS/class15.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="/JS/app.js"></script>
 
 </body>
 
